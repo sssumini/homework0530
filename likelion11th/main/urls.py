@@ -11,4 +11,8 @@ urlpatterns = [
     path('edit/<int:id>', edit, name="edit"),
     path('update/<int:id>', update, name="update"),
     path('delete/<int:id>', delete, name="delete"),
+    path('delete_comment/<int:comment_id>', delete_comment, name="delete_comment"),
+    # tag 관련 path 추가
+    path('tag/', tag_list, name="tag_list"),
+    path('tag/<int:tag_id>', tag_blogs, name="tag_blogs"),
 ]
